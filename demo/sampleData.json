@@ -1,0 +1,161 @@
+{
+  "rootNodes": ["a123123a-cde7-4d95-9ec1-8d127c21200a"],
+  "nodes": {
+    "a123123a-cde7-4d95-9ec1-8d127c21200a": {
+      "type": "group",
+      "name": "tables",
+      "contains": [
+        "31af393f-f80d-45da-bef7-32110de28282",
+        "11757c4d-6fba-4350-be56-55f5c7b90849",
+        "7d889309-422e-4232-ab91-b2604090a3a0",
+        "8b7cb31e-1a7d-4344-aabf-0b9a35a1ba43",
+        "023aa89d-9af3-46ca-b53c-db863b983659",
+        "48d076b3-5077-4c28-bbe9-2fbfb37bbc75"
+      ]
+    },
+    "31af393f-f80d-45da-bef7-32110de28282": {
+      "type": "table",
+      "name": "posts",
+      "fields": [
+        {
+          "name": "userId",
+          "type": "int"
+        },
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ]
+    },
+    "7d889309-422e-4232-ab91-b2604090a3a0": {
+      "type": "table",
+      "name": "comments",
+      "fields": [
+        {
+          "name": "postId",
+          "type": "int"
+        },
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ]
+    },
+    "11757c4d-6fba-4350-be56-55f5c7b90849": {
+      "type": "table",
+      "name": "albums",
+      "fields": [
+        {
+          "name": "userId",
+          "type": "int"
+        },
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    "8b7cb31e-1a7d-4344-aabf-0b9a35a1ba43": {
+      "type": "table",
+      "name": "photos",
+      "fields": [
+        {
+          "name": "albumId",
+          "type": "int"
+        },
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "thumbnailUrl",
+          "type": "string"
+        }
+      ]
+    },
+    "48d076b3-5077-4c28-bbe9-2fbfb37bbc75": {
+      "type": "table",
+      "name": "todos",
+      "fields": [
+        {
+          "name": "userId",
+          "type": "int"
+        },
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "completed",
+          "type": "boolean"
+        }
+      ]
+    },
+    "023aa89d-9af3-46ca-b53c-db863b983659": {
+      "type": "table",
+      "name": "users",
+      "fields": [
+        {
+          "name": "id",
+          "type": "int"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "username",
+          "type": "string"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "phone",
+          "type": "string"
+        },
+        {
+          "name": "website",
+          "type": "string"
+        }
+      ]
+    }
+  }
+}

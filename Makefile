@@ -2,10 +2,13 @@ SRC = $(shell find src)
 
 .DEFAULT_GOAL := help
 
-.PHONY: clean prepack help
+.PHONY: clean demo prepack help
 
 clean: ## Clean all build and install artifacts
 	@git clean -dfX
+
+demo: prepack ## Start a live development server
+	@cd demo && pnpm exec parcel ./index.html
 
 dist-cjs: node_modules $(SRC)
 	pnpm exec swc ./src -d dist-cjs --config module.type=commonjs

@@ -1,0 +1,5 @@
+:root {
+    --quicktree--group--indent: 10px;
+    --quicktree--node--padding: 8px;
+    --quicktree--node--hover--background: #f1fafb;
+}
