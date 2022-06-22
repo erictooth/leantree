@@ -1,3 +1,3 @@
-export * from "./QuickTree";
-export * from "./quickTree.types";
-export * from "./useQuickTreeStore";
+export * from "./LeanTree";
+export * from "./leanTree.types";
+export * from "./useLeanTreeStore";

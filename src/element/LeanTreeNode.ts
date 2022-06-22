@@ -1,8 +1,8 @@
 import { LitElement, html, css, type TemplateResult } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 
-@customElement("quicktree-node")
-export class QuickTreeNode extends LitElement {
+@customElement("leantree-node")
+export class LeanTreeNode extends LitElement {
   static styles = css`
     [role="treeitem"]:focus-visible {
       outline: none;
@@ -17,12 +17,12 @@ export class QuickTreeNode extends LitElement {
       cursor: default;
       user-select: none;
 
-      padding: var(--quicktree--node--padding);
+      padding: var(--leantree--node--padding);
     }
 
     [part="label"]:hover,
     [part="label"]:focus-visible {
-      background: var(--quicktree--node--hover--background);
+      background: var(--leantree--node--hover--background);
     }
   `;
 

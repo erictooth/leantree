@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "quicktree": "workspace:*",
+    "leantree": "workspace:*",
     "react": "^17",
     "react-dom": "^17"
   },

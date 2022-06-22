@@ -1,11 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "quicktree/dist-esm/element";
-import {
-  QuickTree,
-  useQuickTreeStore,
-  type Node,
-} from "quicktree/dist-esm/react";
+import "leantree/dist-esm/element";
+import { LeanTree, useLeanTreeStore, type Node } from "leantree/dist-esm/react";
 import sampleData from "./sampleData.json";
 import "./index.css";
 
@@ -35,8 +31,8 @@ const dataToNode = (nodeId, node: any, data: any): Node => {
 
 const App = () => {
   return (
-    <QuickTree
-      store={useQuickTreeStore()}
+    <LeanTree
+      store={useLeanTreeStore()}
       rootNodes={sampleData.rootNodes.map((nodeId) => {
         return dataToNode(nodeId, sampleData.nodes[nodeId], sampleData);
       })}

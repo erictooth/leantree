@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
@@ -27,11 +27,11 @@ importers:
       '@types/react-dom': ^18.0.5
       parcel: ^2.6.0
       process: ^0.11.10
-      quicktree: workspace:*
+      leantree: workspace:*
       react: ^17
       react-dom: ^17
     dependencies:
-      quicktree: link:..
+      leantree: link:..
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
@@ -1843,6 +1843,9 @@ packages:
     resolution: {integrity: sha512-q6hrD3rm9M4S/VBVTcOs3pl55cnRwWfco7n8hZoAqnInWjWB+Khu92LRBMerMBTdE15Y+lJhWrXNdimDYstfhQ==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
+    peerDependenciesMeta:
+      '@parcel/core':
+        optional: true
     dependencies:
       '@parcel/config-default': 2.6.2_@parcel+core@2.6.2
       '@parcel/core': 2.6.2

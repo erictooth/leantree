@@ -4,5 +4,5 @@ import {
   initialState as initialRootState,
   type RootState,
 } from "../state";
-export const useQuickTreeStore = (initialState: RootState = initialRootState) =>
+export const useLeanTreeStore = (initialState: RootState = initialRootState) =>
   useReducer(rootReducer, initialState);

@@ -1,15 +1,15 @@
 import * as React from "react";
-import { useQuickTreeStore } from "./useQuickTreeStore";
-import { quickTreeStoreContext } from "./quickTreeStoreContext";
-import { QuickTreeNode } from "./QuickTreeNode";
-import type { Node } from "./quickTree.types";
+import { useLeanTreeStore } from "./useLeanTreeStore";
+import { leanTreeStoreContext } from "./leanTreeStoreContext";
+import { LeanTreeNode } from "./LeanTreeNode";
+import type { Node } from "./leanTree.types";
 
-export type QuickTreeProps = {
+export type LeanTreeProps = {
   rootNodes: Node[];
-  store: ReturnType<typeof useQuickTreeStore>;
+  store: ReturnType<typeof useLeanTreeStore>;
 };
 
-export const QuickTree = (props: QuickTreeProps): React.ReactElement => {
+export const LeanTree = (props: LeanTreeProps): React.ReactElement => {
   const elemRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const handleExpand = (e: any) => {
@@ -28,12 +28,12 @@ export const QuickTree = (props: QuickTreeProps): React.ReactElement => {
   }, []);
 
   return (
-    <quickTreeStoreContext.Provider value={props.store}>
-      <quicktree-group ref={elemRef}>
+    <leanTreeStoreContext.Provider value={props.store}>
+      <leantree-group ref={elemRef}>
         {props.rootNodes.map((node) => (
-          <QuickTreeNode key={node.id} node={node} />
+          <LeanTreeNode key={node.id} node={node} />
         ))}
-      </quicktree-group>
-    </quickTreeStoreContext.Provider>
+      </leantree-group>
+    </leanTreeStoreContext.Provider>
   );
 };

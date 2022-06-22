@@ -1,2 +1,2 @@
-export * from "./QuickTreeGroup";
-export * from "./QuickTreeNode";
+export * from "./LeanTreeGroup";
+export * from "./LeanTreeNode";

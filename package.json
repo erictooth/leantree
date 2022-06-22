@@ -1,15 +1,15 @@
 {
-  "name": "quicktree",
+  "name": "leantree",
   "version": "0.0.1",
   "author": "erictooth",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erictooth/quicktree.git"
+    "url": "https://github.com/erictooth/leantree.git"
   },
-  "homepage": "https://github.com/erictooth/quicktree",
+  "homepage": "https://github.com/erictooth/leantree",
   "bugs": {
-    "url": "https://github.com/erictooth/quicktree/issues"
+    "url": "https://github.com/erictooth/leantree/issues"
   },
   "files": [
     "dist-cjs",
@@ -48,5 +48,8 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@7.2.1"
+  "packageManager": "pnpm@7.2.1",
+  "scripts": {
+    "prepack": "make prepack"
+  }
 }

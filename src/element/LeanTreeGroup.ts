@@ -2,11 +2,11 @@ import { LitElement, html, css, type TemplateResult } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
 
-@customElement("quicktree-group")
-export class QuickTreeGroup extends LitElement {
+@customElement("leantree-group")
+export class LeanTreeGroup extends LitElement {
   static styles = css`
     [role="group"] {
-      padding-inline-start: var(--quicktree--group--indent);
+      padding-inline-start: var(--leantree--group--indent);
     }
   `;
 
@@ -18,7 +18,7 @@ export class QuickTreeGroup extends LitElement {
 
   connectedCallback(): void {
     super.connectedCallback();
-    if (this.parentElement?.tagName !== "QUICKTREE-NODE") {
+    if (this.parentElement?.tagName !== "LEANTREE-NODE") {
       this._isRoot = true;
     }
   }
