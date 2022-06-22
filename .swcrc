@@ -1,0 +1,10 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "jsx": true,
+      "decorators": true
+    },
+    "target": "es2019"
+  }
+}

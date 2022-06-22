@@ -1,0 +1,5 @@
+.parcel-cache
+.pnpm-debug.log
+dist-cjs
+dist-esm
+node_modules

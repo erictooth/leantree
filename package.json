@@ -1,0 +1,48 @@
+{
+  "name": "quicktree",
+  "version": "0.0.1",
+  "author": "erictooth",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erictooth/quicktree.git"
+  },
+  "homepage": "https://github.com/erictooth/quicktree",
+  "bugs": {
+    "url": "https://github.com/erictooth/quicktree/issues"
+  },
+  "files": [
+    "dist-cjs",
+    "dist-esm"
+  ],
+  "exports": {
+    "./element": {
+      "import": "./dist-esm/element/index.js",
+      "require": "./dist-cjs/element/index.js"
+    },
+    "./state": {
+      "import": "./dist-esm/state/index.js",
+      "require": "./dist-cjs/state/index.js"
+    }
+  },
+  "dependencies": {
+    "@types/react": "^18.0.14",
+    "lit": "^2.2.6"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.204",
+    "chokidar-cli": "^3",
+    "react": "^17",
+    "typescript": "~4.7"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@7.2.1"
+}
