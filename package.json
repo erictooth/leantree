@@ -20,6 +20,10 @@
       "import": "./dist-esm/element/index.js",
       "require": "./dist-cjs/element/index.js"
     },
+    "./react": {
+      "import": "./dist-esm/react/index.js",
+      "require": "./dist-cjs/react/index.js"
+    },
     "./state": {
       "import": "./dist-esm/state/index.js",
       "require": "./dist-cjs/state/index.js"
